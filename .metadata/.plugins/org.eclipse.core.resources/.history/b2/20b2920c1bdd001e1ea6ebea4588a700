@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+function check(){
+	//alert("이건 알람입니다.");
+	let frm = document.frm;
+	alert(frm);
+}
+
+</script>
+</head>
+<body>
+
+<form name="frm" action="check_action.jsp"  method="post">
+		<label><input type="checkbox" value="book"  name="hobby">독서</label>
+        <label><input type="checkbox" value="movie" name="hobby">영화</label>
+        <label><input type="checkbox" value="sleep" name="hobby">잠자기</label>        
+		<button type="button" onclick="check();">전송</button>
+		
+</form>
+
+</body>
+</html>

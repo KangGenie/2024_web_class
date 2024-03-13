@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+.wrap{
+width:600px;
+display:flex;
+border:1px solid black;
+
+margin:0 auto;
+}
+.wrap div{
+border:1px solid black;
+width:33%;
+
+}
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+	<div></div> 
+	<div></div> 
+	<div></div>
+</div>
+</body>
+</html>

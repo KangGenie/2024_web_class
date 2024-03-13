@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="wrap">
+	<!-- 이미지 영역 -->
+	<div class="img_wrap">이미지</div>
+	
+	<!-- 로그인정보영역 -->
+	<div class="info_wrap">로그인정보 </div>
+</div>
+</body>
+</html>

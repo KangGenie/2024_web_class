@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+
+</style>
+</head>
+<body>
+ <div class ="wrap">
+	<table>
+		<tr>
+		 <tb>no</tb>
+		 <tb>곡</tb>
+		 <tb>artist</tb>
+		 <tb>album</tb>
+		 <tb>등록</tb>
+		</tr>
+	
+	</table> 
+ </div>
+</body>
+</html>

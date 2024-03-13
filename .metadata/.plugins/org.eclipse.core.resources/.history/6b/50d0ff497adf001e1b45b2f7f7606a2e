@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<title>Insert title here</title>
+<style>
+.wrap{
+	width:500px;
+	border: 1px solid black;
+}
+table{
+margin: 0 auto;
+border:1px solid black;
+}
+
+</style>
+</head>
+<body>
+ <div class ="wrap">
+ 	<select>
+ 		<option value="selectable">선택할 수 있습니다.</option>
+ 		<option value="song">곡</option>
+ 		<option value="artist">가수</option>
+ 	</select>
+ 	<input type="text" class="search-input" placeholder="검색어를 입력하세요">
+    <button class="search-button"><i class="fas fa-search"></i></button>
+ 	
+	<table>
+		<tr>
+		 <tb>no</tb>
+		 <tb>곡</tb>
+		 <tb>artist</tb>
+		 <tb>album</tb>
+		 <tb>등록</tb>
+		</tr>
+	
+	</table> 
+ </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+function check(){
+	//alert("이건 알람입니다.");
+	let frm = document.frm;
+	//alert(frm);
+	let gender = frm.gender;
+	//alert(gender.length);
+	
+	alert(gender[0].checked);
+	alert(gender[1].checked);
+	alert(gender[2].checked);
+	
+	let falg=false;
+	for(let i=0; i<gender.length; i++){
+		if(gender[i].checked){
+			flag=true;
+			break;
+		}
+	}
+}
+
+</script>
+</head>
+
+<body>
+
+	<form name="frm" action="radio_action.jsp"  method="post" >
+	
+		<label><input type="radio" value="M" name="gender">남성</label>
+        <label><input type="radio" value="W" name="gender">여성</label>
+        <label><input type="radio" value="O" name="gender">기타</label>        
+		<button >전송</button>
+	</form>
+	
+</body>
+</html>

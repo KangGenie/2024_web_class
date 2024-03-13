@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+.wrap{
+width:400px;
+border:1px solid black;
+}
+
+.img_wrap{
+width:200px;
+height:200px;
+background-color: blue;
+margin:0 auto;
+}
+.info_wrap{
+width:300px;
+border:1px solid black;
+margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+	<!-- 이미지 영역 -->
+	<div class="img_wrap">이미지</div>
+	
+	<!-- 로그인정보영역 -->
+	<div class="info_wrap">로그인정보 </div>
+</div>
+</body>
+</html>

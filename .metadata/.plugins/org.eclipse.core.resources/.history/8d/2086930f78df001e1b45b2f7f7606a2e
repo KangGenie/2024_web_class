@@ -1,0 +1,140 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+    <%@ page import="java.sql.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<title>Insert title here</title>
+    <style>
+        body {
+
+        }
+
+        .search-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .search-input,
+        .search-button,
+        #options,
+        .table {
+            height: 30px; /* 높이를 맞춤 */
+            box-sizing: border-box;
+        }
+
+        .search-input,
+        .search-button,
+        #options {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .table {
+            display: flex;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+       table{
+            display: flex;
+        }
+
+        tr td{
+            
+            display:flex;
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+            width: 25%;
+            border-collapese:collapse;
+        
+        }
+    </style>
+</head>
+<body>
+
+<div class="search-container">
+    <div>
+        <select id="options">
+            <option value="selectable">선택할 수 있습니다</option>
+            <option value="song">곡</option>
+        </select>
+
+        <input type="text" class="search-input" placeholder="검색어를 입력하세요">
+        <button class="search-button"><i class="fas fa-search"></i></button>
+    </div>
+	
+
+        <table>
+        	<tr>
+	            <td>No</td>
+	            <td>곡명</td>
+	            <td>아티스트</td>
+	            <td>앨범</td>
+	            <td>삭제</td>
+            </tr>
+        </table>
+ 
+    <%
+String driver = "oracle.jdbc.driver.OracleDriver";
+String url = "jdbc:oracle:thin:@localhost:1521:testdb";
+String user = "scott";
+String password = "tiger";	
+
+try {
+	//1.드라이버 로드(객체 생성)
+	Class.forName(driver);
+	
+	//2. 데이터베이스 연결
+	Connection con = DriverManager.getConnection(url, user, password);
+	
+	//3. 문장 얻어오기
+	String sql = "select so.title, si.singer, a.album from singer si";
+	sql += " join song so";
+	sql += " on si.singer_id = so.singer";
+	sql += " join album a";
+	sql += " on a.singer = si.singer_id";
+	sql += " and a.album_id=so.album";
+	
+	PreparedStatement pst = con.prepareStatement(sql);
+	
+	//5. 실행(executeQuery()-조회, executeUpdate()-나머지 등록, 변경, 삭제)
+	ResultSet rs = pst.executeQuery();
+	
+	//
+	int cnt=1;
+	while(rs.next()) {
+%>	
+	
+			<table>
+				<tr>
+				<td><%=cnt %></td>
+				<td><%=rs.getString(1) %></td>
+				<td> <%=rs.getString(2) %></td>
+				<td><%=rs.getString(3) %></td>
+				<td><a href="deleteSong.jsp?title=<%=rs.getString(1)%>"><span class="ion--close"></span></a></td>
+				</tr>
+			</table>
+		
+<%
+	cnt++;
+	}
+	
+} catch (ClassNotFoundException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+} catch (SQLException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+
+%>
+</div>
+
+</body>
+</html>

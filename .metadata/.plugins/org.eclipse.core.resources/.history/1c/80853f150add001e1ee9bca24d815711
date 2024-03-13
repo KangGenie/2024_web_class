@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+ul{
+list-style: none;
+}
+
+ul li{
+	width:200px;
+	height:300px;
+	border:1px solid black;
+}
+</style>
+
+</head>
+<body>
+
+</body>
+</html>

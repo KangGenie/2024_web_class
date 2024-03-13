@@ -1,0 +1,54 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.io.*, java.util.*"%>
+
+<%@ page import="java.util.ArrayList" %>
+<%! ArrayList<String> playlist = new ArrayList<>(); %>
+
+<%
+// 요청 매개변수에서 노래 제목을 가져옵니다
+String title = request.getParameter("title");
+
+// 여기에서 재생목록에 제목을 추가하거나 필요한 기타 작업을 수행합니다
+playlist.add(title);
+
+// 응답을 반환합니다 (HTML 테이블로 변환)
+%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>재생목록</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>재생목록</h2>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>노래 제목</th>
+            <th>삭제</th>
+        </tr>
+        <% for (int i = 0; i < playlist.size(); i++) { %>
+            <tr>
+                <td><%= i + 1 %></td>
+                <td><%= playlist.get(i) %></td>
+                <td><a href="deleteSong.jsp?title=<%=rs.getString(1)%>"><span class="ion--close"></span></a></td>
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>

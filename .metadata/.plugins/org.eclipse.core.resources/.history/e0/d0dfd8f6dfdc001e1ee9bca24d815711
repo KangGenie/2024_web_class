@@ -1,0 +1,79 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@  page import="java.sql.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+header{
+ border:1px solid black;
+ padding :20px;
+ 
+}
+nav{
+	
+	 border:1px solid black;
+	 padding :10px;
+}
+
+a{
+	text-decoration:none;
+	color:black;
+}
+nav span{
+   padding-right: 5px;
+}
+
+
+section {
+ height: 500px;
+ padding:10px;
+}
+
+
+footer{
+  border:1px solid black;
+  display: flex;
+  padding:10px;
+  
+}
+
+footer  > div{
+ 
+}
+
+
+footer > div:nth-child(1) {	 
+	 width:20%;
+}
+
+
+
+footer > div:nth-child(2) {	 
+	 width:60%;
+}
+
+
+
+footer > div:nth-child(3) {
+	 
+	 width:20%;
+}
+
+
+
+</style>
+</head>
+<body>
+<header>header</header>
+
+<section>section</section>
+<footer>
+	<div>footer_1</div>
+	<div>footer_2</div>
+	<div>footer_3</div>
+</footer>
+</body>
+</html>
