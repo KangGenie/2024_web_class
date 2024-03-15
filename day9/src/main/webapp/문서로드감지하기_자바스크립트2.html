@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	//이 코드 오류발생 =>아직 body가 로드 되지 않았음
+	//->2가지 해결방법
+	//1.뒤에 두는 것
+	//2.이벤트(문서로드 load)를 감지해서 태그의 내용을 바꿀 수 있다.
+	
+	//let wrap = document.querySelector(".wrap");
+	//wrap.innerHTML = "변경될까?";
+	
+	//문서의 로드 이벤트 처리
+	//						 이벤트이름,  함수
+	//window.addEventListener("load",해야할일_함수); 
+	
+	window.addEventListener("load", aa);
+	
+	function aa(){
+		alert("hi");
+		let wrap = document.querySelector(".wrap");
+		alert(wrap);
+		wrap.innerHTML = "변경이 될까?";
+	}
+</script>
+</head>
+<body>
+
+<h4>wrap영역의 내용을 바꾸기</h4>
+<div class="wrap"> hi </div>
+
+</body>
+</html>

@@ -33,8 +33,18 @@ C:\Users\user\Desktop\2024자바풀스택\웹\web_ws\.metadata\.plugins\org.eclipse.js
 \day4\src\main\java
 C:\Users\user\Desktop\2024자바풀스택\웹\web_ws\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1660140552.index
 \과제\src\main\java
+C:\Users\user\Desktop\2024자바풀스택\웹\web_ws\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\279845716.index
+\sessionLogin\src\main\java
+C:\Users\user\Desktop\2024자바풀스택\웹\web_ws\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4163264402.index
+\day8\src\main\java
+C:\Users\user\Desktop\2024자바풀스택\웹\web_ws\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\178583830.index
+\day8\src\main\java
+C:\Users\user\Desktop\2024자바풀스택\웹\web_ws\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2790542365.index
+\session_ex\src\main\java
 C:\Users\user\Desktop\2024자바풀스택\웹\web_ws\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1428956585.index
 \day7\src\main\java
+C:\Users\user\Desktop\2024자바풀스택\웹\web_ws\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3633203685.index
+\itsMVC\src\main\java
 C:\Users\user\Desktop\2024자바풀스택\웹\web_ws\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3294687160.index
 \hello\src\main\java
 C:\Users\user\Desktop\2024자바풀스택\웹\web_ws\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2167859495.index
@@ -51,3 +61,7 @@ C:\Users\user\Desktop\2024자바풀스택\웹\web_ws\.metadata\.plugins\org.eclipse.js
 \day6\src\main\java
 C:\Users\user\Desktop\2024자바풀스택\웹\web_ws\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2833693930.index
 \day6\src\main\java
+C:\Users\user\Desktop\2024자바풀스택\웹\web_ws\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4075555460.index
+\sessionCart\src\main\java
+C:\Users\user\Desktop\2024자바풀스택\웹\web_ws\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2008862829.index
+\sessionSurvey\src\main\java

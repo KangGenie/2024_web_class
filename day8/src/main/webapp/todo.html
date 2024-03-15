@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.container{
+border: 1px solid black;
+width:600px;
+height:600px;
+margin:0 auto;
+}
+.header{
+
+width:500px;
+height: 25%;
+margin: 20px auto;
+background-color: #DCDCDC;
+text-align:center;
+}
+.todo{
+
+width:500px;
+height:25%;
+margin: 0 auto;
+justify-content:center;
+
+}
+.todo input {
+  width:75%;
+  height:30%;
+  font-size:20px;
+  
+
+}
+.todo button{
+ width: 70px;
+ height: 30px;
+
+}
+
+.todolist{
+
+width:500px;
+height:20%;
+margin:0 auto;
+}
+.todolist input{
+  width:97%;
+  height:30%;
+  font-size:20px;
+}
+.footer{
+
+width:500px;
+height:20%;
+margin: 0 auto;
+justify-content:center;
+align-items: center;
+}
+.footer hr{
+border:1px solid black;
+border-top:5px;
+width:100%;
+}
+.footer input{
+ margin-right: 10px;
+ height:20px;
+float:left;
+}
+.footer button{
+float:right;
+height: 30px;
+}
+
+</style>
+</head>
+<body>
+<div class = container>
+
+<div class = header>
+<h1>오늘은 😊</h1>
+<h3>
+<script>
+date = new Date().toLocaleDateString();
+document.write(date);
+</script>
+</h3>
+</div>
+
+<div class = todo>
+<h3>새로운 todo 작성하기🖉</h3>
+<input type="text" placeholder="일정등록">
+<button>등록</button>
+</div>
+
+<div class = todolist>
+<h3>Todo List</h3>
+<input type="text" placeholder="검색어를 입력하세요.">
+</div>
+
+<div class=footer >
+<hr /></hr>
+<input type="checkbox">
+
+<button>삭제</button>
+</div>
+</div>
+
+</body>
+</html>
